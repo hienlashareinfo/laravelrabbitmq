@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('noti',[\App\Http\Controllers\NotiController::class,'index']);
 Route::get('/', function () {
 //    \App\Jobs\DemoJob::dispatch('hehehhehe')->onQueue('demo')->delay(\Carbon\Carbon::now()->addSeconds(250));
     for ($i =1;$i <=1000;$i++) {
